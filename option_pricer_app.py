@@ -126,7 +126,7 @@ with st.sidebar:
     r = r_pct / 100.0
     T_days = st.number_input("Time to expiry (days)", min_value=0.0, value=30.0, step=1.0, format="%.2f")
     T_years = to_years(T_days)
-    sigma_pct = st.slider("Implied Volatility σ (%, annualized)", min_value=5.0, max_value=35.0, value=25.0, step=0.1)
+    sigma_pct = st.slider("Implied Volatility σ (%, annualized)", min_value=5.0, max_value=35.0, value=25.0, step=0.01)
     sigma = sigma_pct / 100.0
 
     st.markdown("---")
